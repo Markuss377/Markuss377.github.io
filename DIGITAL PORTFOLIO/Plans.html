@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A digital portfolio for a BTEC Level 2 IT student.">
+  <title>My Plans - Digital Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="Home.html">Digital Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="Project.html">Projects</a></li>
+      <li><a href="Plans.html" class="active" aria-current="page">Plans</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="Interests.html">Interests</a></li>
+      <li><a href="FutureGoal.html">Future Goals</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">☰</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="Project.html">Projects</a>
+    <a href="Plans.html" class="active" aria-current="page">Plans</a>
+    <a href="CV.html">CV</a>
+    <a href="Interests.html">Interests</a>
+    <a href="FutureGoal.html">Future Goals</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+
+  <header class="page-hero">
+    <div class="hero-inner">
+      <h1>My Plans</h1>
+      <p>The next steps I want to take to improve my IT skills.</p>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="commentary">
+      <strong>Page purpose:</strong> This page explains how I plan to continue improving my IT skills after this portfolio project.
+    </section>
+
+    <section class="twocol">
+      <div class="contentbox">
+        <h3>Short-Term Plans</h3>
+        <ul class="tick-list">
+          <li>Complete my BTEC Level 2 IT course with the best grades I can</li>
+          <li>Keep improving my HTML and CSS skills</li>
+          <li>Practise JavaScript/Python basics so my pages can become more interactive</li>
+          <li>Use feedback from others to improve my portfolio</li>
+        </ul>
+      </div>
+
+      <div class="contentbox">
+        <h3>Longer - Term Plans</h3>
+        <ul class="tick-list">
+          <li>Continue studying IT at a higher level, such as Level 3</li>
+          <li>Gain experience through work experience, volunteering or an apprenticeship</li>
+          <li>Build more projects that show practical skills</li>
+          <li>Improve communication and teamwork through group tasks</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contentbox">
+      <h3>Skills I Want to Develop</h3>
+      <p>I would like to become more confident with web development, Python and general IT problem solving. I also want to keep improving my communication skills because IT work often involves explaining problems clearly to other people.</p>
+    </section>
+
+  </main>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

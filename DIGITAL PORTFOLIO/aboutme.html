@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A digital portfolio for a BTEC Level 2 IT student.">
+  <title>About Me - Digital Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="logo" href="Home.html">Digital Portfolio</a>
+
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="aboutme.html" class="active" aria-current="page">About Me</a></li>
+      <li><a href="Project.html">Project</a></li>
+      <li><a href="Plans.html">Plans</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="Interests.html">Interests</a></li>
+      <li><a href="FutureGoal.html">Future Goal</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">☰</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="Home.html">Home</a>
+    <a href="aboutme.html" class="active" aria-current="page">About Me</a>
+    <a href="Project.html">Project</a>
+    <a href="Plans.html">Plans</a>
+    <a href="CV.html">CV</a>
+    <a href="Interests.html">Interests</a>
+    <a href="FutureGoal.html">Future Goal</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+
+  <header class="page-hero">
+    <div class="hero-inner">
+      <h1>About Me</h1>
+      <p>My background, achievements and personal skills.</p>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+
+    <section class="commentary">
+      <strong>Page purpose:</strong> This page explains my background and the personal skills I can bring to workplace or future IT role.
+    </section>
+
+    <section class="contentbox">
+      <h2>About Me</h2>
+      <p>
+        I am currently studying BTEC Level 2 Certificate in IT. I'm building web pages and problem solving.
+        I enjoy learning practical skills because they can be used to create
+        real projects and support future employment.
+      </p>
+      <p>
+        I try to approach tasks in organised way. When I working on a project, I like to break the task
+        into smaller steps and test the work and improve it after feedback.
+      </p>
+    </section>
+
+    <section class="twocol">
+      <div class="contentbox">
+        <h3>Achievements</h3>
+        <ul class="tick-list">
+          <li>Duke of Edinburgh Bronze Award 2021</li>
+          <li>BTEC Level 2 Certificate in IT in progress</li>
+          <li>GCSE qualifications, including Maths grade 4</li>
+        </ul>
+      </div>
+
+      <div class="contentbox">
+        <h3>Personal Skills</h3>
+        <ul class="tick-list">
+          <li>Adaptability and flexibility</li>
+          <li>Problem solving</li>
+          <li>Ability to work independently</li>
+          <li>Time management</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>

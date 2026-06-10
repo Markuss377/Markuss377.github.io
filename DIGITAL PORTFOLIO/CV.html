@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A digital portfolio for a BTEC Level 2 IT student.">
+  <title>My CV - Digital Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="Home.html">Digital Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="Project.html">Projects</a></li>
+      <li><a href="Plans.html">Plans</a></li>
+      <li><a href="CV.html" class="active" aria-current="page">CV</a></li>
+      <li><a href="Interests.html">Interests</a></li>
+      <li><a href="FutureGoal.html">Future Goals</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">☰</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="Home.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="Project.html">Projects</a>
+    <a href="Plans.html">Plans</a>
+    <a href="CV.html" class="active" aria-current="page">CV</a>
+    <a href="Interests.html">Interests</a>
+    <a href="FutureGoal.html">Future Goals</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+
+  <header class="page-hero">
+    <div class="hero-inner">
+      <h1>My CV</h1>
+      <p>A short CV page showing education, experience and key skills.</p>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="commentary">
+      <strong>CV commentary:</strong> This page summarises my education, experience and skills in a clear way.
+    </section>
+
+    <section class="contentbox">
+      <h2>Personal Profile</h2>
+      <p>I am an IT student currently studying BTEc Level 2 Certificate in IT. I interested in web development, digital technology and practical problem solving. I developing skills in HTML, CSS, organisation and communication.</p>
+    </section>
+
+    <section class="twocol">
+      <div class="contentbox">
+        <h3>Education</h3>
+        <p><strong>BTEC Level 2 Certificate in IT</strong><br>Currently in progress</p>
+        <p><strong>GCSEs</strong><br>Including Maths grade 4</p>
+      </div>
+
+      <div class="contentbox">
+        <h3>Key Skills</h3>
+        <ul class="tick-list">
+          <li>HTML and CSS basics</li>
+          <li>Problem solving</li>
+          <li>Time management</li>
+          <li>Customer service</li>
+          <li>Working independently</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contentbox">
+      <h3>Work Experience</h3>
+      <p><strong>The Purfleet Trust</strong> - December 2024 to Present</p>
+      <p>I served customers on the till, which helped me build communication and customer service skills. I also restocked shelves and signed up new members by checking their details and keeping information organised.</p>
+      <p>This experience is useful because IT roles also need accuracy, patience and good communication with users.</p>
+    </section>
+
+    <section class="contentbox">
+      <h3>Achievements</h3>
+      <ul class="tick-list">
+        <li>Duke of Edinburgh Bronze Award - 2021</li>
+        <li>BTEC Level 2 Certificate in IT - In progress</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

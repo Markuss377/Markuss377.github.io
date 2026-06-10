@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A digital portfolio for a BTEC Level 2 IT student.">
+  <title>My Interests - Digital Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="Home.html">Digital Portfolio</a>
+    <ul class="nav-links">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="Project.html">Projects</a></li>
+      <li><a href="Plans.html">Plans</a></li>
+      <li><a href="CV.html">CV</a></li>
+      <li><a href="Interests.html" class="active" aria-current="page">Interests</a></li>
+      <li><a href="FutureGoal.html">Future Goals</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu">☰</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="Project.html">Projects</a>
+    <a href="Plans.html">Plans</a>
+    <a href="CV.html">CV</a>
+    <a href="Interests.html" class="active" aria-current="page">Interests</a>
+    <a href="FutureGoal.html">Future Goals</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+
+  <header class="page-hero">
+    <div class="hero-inner">
+      <h1>My Interests</h1>
+      <p>Hobbies and interests.</p>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <section class="commentary">
+      <strong>Page purpose:</strong> This page shows some of my interests outside of college.
+    </section>
+
+    <section class="grid cards-3">
+      <article class="contentbox small-card">
+        <h3>Technology</h3>
+        <p>I am interested in technology because it is always changing. Learning IT helps me understand how digital tools are made and how they can solve problems.</p>
+      </article>
+
+      <article class="contentbox small-card">
+        <h3>Chess</h3>
+        <p>Chess helps me practise concentration, planning ahead and problem solving. These skills are also useful when working on IT tasks.</p>
+      </article>
+
+      <article class="contentbox small-card">
+        <h3>Hiking and Staying Active</h3>
+        <p>I enjoy hiking and staying active. This helps me keep a good routine and shows that I can stay motivated to work towards personal goals.</p>
+      </article>
+    </section>
+
+    <section class="contentbox">
+      <h3>How My Interests Support My Future</h3>
+      <p>My interests support my future because they help me develop useful habits.</p>
+    </section>
+
+  </main>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
